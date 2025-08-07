@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilder Upload - Raspberry Pi</title>
+    <link rel="stylesheet" href="assets/upload.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📤 Bilder Upload</h1>
+            <a href="index.html" class="back-btn">← Zurück zur Slideshow</a>
+        </header>
+
+        <div class="upload-area" id="upload-area">
+            <div class="upload-content">
+                <div class="upload-icon">📁</div>
+                <h2>Bilder hierher ziehen</h2>
+                <p>oder klicken um Dateien auszuwählen</p>
+                <input type="file" id="file-input" multiple accept="image/*" style="display: none;">
+                <button class="select-btn" onclick="document.getElementById('file-input').click()">
+                    Dateien auswählen
+                </button>
+            </div>
+        </div>
+
+        <div class="upload-list" id="upload-list">
+            <h3>Hochgeladene Dateien:</h3>
+            <div id="file-list"></div>
+        </div>
+
+        <div class="progress-container" id="progress-container" style="display: none;">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <div class="progress-text" id="progress-text">0%</div>
+        </div>
+
+        <div class="status" id="status"></div>
+    </div>
+
+    <script src="assets/upload.js"></script>
+</body>
+</html> 

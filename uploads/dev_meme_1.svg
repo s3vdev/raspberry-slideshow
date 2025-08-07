@@ -1,0 +1,12 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#2c3e50"/>
+  <text x="50%" y="35%" font-family="Arial, sans-serif" font-size="100" fill="white" text-anchor="middle">
+    ONE DOES NOT SIMPLY
+  </text>
+  <text x="50%" y="55%" font-family="Arial, sans-serif" font-size="80" fill="#e74c3c" text-anchor="middle">
+    WRITE BUG-FREE CODE
+  </text>
+  <text x="50%" y="75%" font-family="Arial, sans-serif" font-size="40" fill="#95a5a6" text-anchor="middle">
+    - Every Developer Ever
+  </text>
+</svg>

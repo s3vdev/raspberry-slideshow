@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Pi Slideshow</title>
+    <link rel="stylesheet" href="assets/slideshow.css">
+</head>
+<body>
+    <div id="slideshow-container">
+        <div id="slideshow">
+            <!-- Bilder werden hier dynamisch eingefügt -->
+        </div>
+        
+        <!-- Navigation -->
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn">‹</button>
+            <button id="next-btn" class="nav-btn">›</button>
+            <button id="play-pause-btn" class="nav-btn">⏸</button>
+            <button id="fullscreen-btn" class="nav-btn">⛶</button>
+        </div>
+        
+        <!-- Upload Link -->
+        <div id="upload-link">
+            <a href="upload.html" class="upload-btn">📤 Upload</a>
+        </div>
+        
+        <!-- Bildzähler -->
+        <div id="counter">
+            <span id="current-image">0</span> / <span id="total-images">0</span>
+        </div>
+    </div>
+
+    <script src="assets/slideshow.js"></script>
+</body>
+</html> 

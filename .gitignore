@@ -1,0 +1,31 @@
+# Sensible Konfigurationsdateien
+sftp.json
+config.json
+secrets.json
+*.key
+*.pem
+
+# Logs
+*.log
+
+# Temporäre Dateien
+*.tmp
+*.temp
+
+# OS-spezifische Dateien
+.DS_Store
+Thumbs.db
+
+# IDE-Dateien
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node.js (falls später hinzugefügt)
+node_modules/
+npm-debug.log*
+
+# PHP-spezifisch
+*.cache
+*.bak 

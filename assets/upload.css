@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.back-btn {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.upload-area {
+    padding: 40px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.upload-content {
+    border: 3px dashed #ddd;
+    border-radius: 20px;
+    padding: 60px 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.upload-content:hover {
+    border-color: #667eea;
+    background: rgba(102, 126, 234, 0.05);
+}
+
+.upload-content.dragover {
+    border-color: #667eea;
+    background: rgba(102, 126, 234, 0.1);
+    transform: scale(1.02);
+}
+
+.upload-icon {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #667eea;
+}
+
+.upload-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.upload-content p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.select-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.select-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.select-btn:active {
+    transform: translateY(0);
+}
+
+.upload-list {
+    padding: 30px 40px;
+}
+
+.upload-list h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.file-item:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+.file-icon {
+    font-size: 2em;
+    margin-right: 15px;
+    color: #667eea;
+}
+
+.file-info {
+    flex: 1;
+}
+
+.file-name {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.file-size {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.file-status {
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.file-status.uploading {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.file-status.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.file-status.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.progress-container {
+    padding: 20px 40px;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.status {
+    padding: 20px 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.status.success {
+    color: #155724;
+    background: #d4edda;
+}
+
+.status.error {
+    color: #721c24;
+    background: #f8d7da;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        border-radius: 15px;
+    }
+    
+    header {
+        padding: 20px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    .upload-area {
+        padding: 20px;
+    }
+    
+    .upload-content {
+        padding: 40px 15px;
+    }
+    
+    .upload-icon {
+        font-size: 3em;
+    }
+    
+    .upload-content h2 {
+        font-size: 1.5em;
+    }
+    
+    .upload-list {
+        padding: 20px;
+    }
+    
+    .progress-container {
+        padding: 15px 20px;
+    }
+} 
